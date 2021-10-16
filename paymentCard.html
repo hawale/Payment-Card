@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PaymentCard</title>
+    <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="loader"></div>
+    <section>
+        <div class="payment">
+            <div class="bg"></div>
+            <div class="card">
+                <img src="./img/chip.png" alt="" class="chip">
+                <div class="logo"><img src="./img/Rupay-Logo-PNG.png" alt=""></div>
+                <h2 class="bankName" contenteditable="true">Bank Name</h2>
+                <form action="" onsubmit="return validForm()">
+                    <div class="inputBox">
+                        <span>Card No.</span>
+                        <input type="text" placeholder="1234 5678 9012 3456" maxlength="19" id="cardNumber">
+                        <p class="Error" id="noError"></p>
+                    </div>
+                    <div class="inputBox">
+                        <span>Card Holder</span>
+                        <input type="text" placeholder="Harshal Awale" id="cardHolder">
+                        <p class="Error" id="cardError"></p>
+                    </div>
+                    <div class="group">
+                        <div class="inputBox">
+                            <span>Valid Thru</span>
+                            <input type="text" placeholder="MM/YY" maxlength="5" id="userValid">
+                            <p class="Error" id="validError"></p>
+                        </div>
+                        <div class="inputBox">
+                            <span>CVV</span>
+                            <input type="password" placeholder="123" maxlength="4" id="userCvv">
+                            <p class="Error" id="cvvError"></p>
+                        </div>
+                    </div>
+
+
+            </div>
+            <div class="container-btn"> <button class="btn" type="submit">Confirm and Pay</button></div>
+            </form>
+        </div>
+    </section>
+
+
+
+
+    <!-- Java Script -->
+    <script src="script.js">
+
+    </script>
+</body>
+
+</html>
